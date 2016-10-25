@@ -1,0 +1,10 @@
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\DAL.dll.config
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\DAL.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\DAL.pdb
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\EntityFramework.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\EntityFramework.xml
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\obj\Debug\DAL.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\obj\Debug\DAL.pdb

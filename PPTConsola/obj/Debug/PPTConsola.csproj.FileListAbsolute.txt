@@ -1,0 +1,16 @@
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\PPTConsola.exe.config
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\PPTConsola.exe
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\PPTConsola.pdb
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\DAL.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\EntityFramework.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\DAL.pdb
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\EntityFramework.xml
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\obj\Debug\PPTConsola.csprojResolveAssemblyReference.cache
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\obj\Debug\PPTConsola.exe
+c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\obj\Debug\PPTConsola.pdb
+C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\BLL.dll
+C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\Entities.dll
+C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\BLL.pdb
+C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\PPTConsola\bin\Debug\Entities.pdb
