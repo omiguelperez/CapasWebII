@@ -12,23 +12,25 @@ namespace PPTConsola
     {
         static void Main(string[] args)
         {
+            // cliente para guardar
             ClienteDTO cliente1 = new ClienteDTO
             {
-                Nombre = "Oscar",
-                Direccion = "San Joaquin",
-                Telefono = "3113931898"
+                Nombre = "Miguel",
+                Direccion = "Alamos 1",
+                Telefono = "3113298374"
             };
 
+            // guardar el cliente
             ClienteBLL clienteBLL = new ClienteBLL();
-            int nr = clienteBLL.Insertar(cliente1);
-
-            Console.WriteLine("se realzo la operacion; Numero de registros afectados " + nr);
+            Respuesta respuesta = clienteBLL.Insertar(cliente1);
+            Console.WriteLine(respuesta.Mensaje + ", Filas afactadas: " + respuesta.FilasAfectadas);
             Console.ReadKey();
+
+            // ahora una consulta de los datos
             Console.WriteLine("Consulta de datos");
-            
-            foreach (var item in clienteBLL.GetRecords())
+            foreach (var cliente in clienteBLL.GetRecords())
             {
-                Console.WriteLine(item.Nombre + " " + item.Telefono);
+                Console.WriteLine(cliente.Nombre + " " + cliente.Telefono);
             }
             Console.ReadKey();
         }

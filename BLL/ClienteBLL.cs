@@ -10,17 +10,42 @@ namespace BLL
 {
     public class ClienteBLL
     {
-        public int Insertar(ClienteDTO cliente)
+        Respuesta respuesta = new Respuesta();
+        Contexto db;
+
+        public Respuesta Insertar(ClienteDTO cliente)
         {
-            using(Contexto db = new Contexto())
+            using(db = new Contexto())
             {
-                Cliente c = new Cliente();
-                c.ClienteId = cliente.ClienteId;
-                c.Direccion = cliente.Direccion;
-                c.Nombre = cliente.Nombre;
-                c.Telefono = cliente.Telefono;
-                db.Clientes.Add(c);
-                return db.SaveChanges();
+                try
+                {
+                    // preparar el cliente para guardar
+                    Cliente c = new Cliente();
+                    c.ClienteId = cliente.ClienteId;
+                    c.Direccion = cliente.Direccion;
+                    c.Nombre = cliente.Nombre;
+                    c.Telefono = cliente.Telefono;
+                    db.Clientes.Add(c);
+                    
+                    // preparar la respuesta
+                    respuesta.FilasAfectadas = db.SaveChanges();
+                    respuesta.Mensaje = "Se realizó la operación satisfactoriamente";
+                    respuesta.Error = false;
+                }
+                catch (System.Data.Entity.Validation.DbEntityValidationException ex)
+                {
+                    respuesta.Mensaje = ex.Message;
+                    respuesta.FilasAfectadas = 0;
+                    respuesta.Error = true;
+                }
+                catch (Exception ex)
+                {
+                    respuesta.Mensaje = ex.Message;
+                    respuesta.FilasAfectadas = 0;
+                    respuesta.Error = true;
+                }
+
+                return respuesta;
             }
         }
 
