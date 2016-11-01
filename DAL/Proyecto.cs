@@ -12,6 +12,7 @@ namespace DAL
         {
             ProgramacionPagos = new List<ProgramacionPago>();
         }
+        
         public int ProyectoId { get; set; }
         public string Nombre { get; set; }
         public decimal Valor { get; set; }

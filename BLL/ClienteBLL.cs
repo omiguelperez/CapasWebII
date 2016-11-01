@@ -11,7 +11,7 @@ namespace BLL
     public class ClienteBLL
     {
         Respuesta respuesta = new Respuesta();
-        Contexto db;
+        Contexto db = new Contexto();
 
         public Respuesta Insertar(ClienteDTO cliente)
         {
