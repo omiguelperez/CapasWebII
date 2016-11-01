@@ -12,7 +12,7 @@ namespace PPTConsola
     {
         static void Main(string[] args)
         {
-            // cliente para guardar
+             //7cliente para guardar
             ClienteDTO cliente1 = new ClienteDTO
             {
                 Nombre = "Miguel",
@@ -33,6 +33,16 @@ namespace PPTConsola
                 Console.WriteLine(cliente.Nombre + " " + cliente.Telefono);
             }
             Console.ReadKey();
+
+            //ProyectoDTO proyecto1 = new ProyectoDTO
+            //{
+            //    Nombre = "Miguel",
+            //    Valor = 10000,
+            //    FechaInicio = ,
+            //    Plazo = "Miguel",
+            //    Estado = "Alamos 1",
+            //    ClienteId = "3113298374",
+            //};
         }
     }
 }
