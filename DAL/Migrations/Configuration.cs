@@ -1,11 +1,11 @@
-namespace DAL.Migrations
+namespace Entities.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DAL.Contexto>
+    internal sealed class Configuration : DbMigrationsConfiguration<Entities.Contexto>
     {
         public Configuration()
         {
@@ -15,7 +15,7 @@ namespace DAL.Migrations
             ContextKey = "DAL.Contexto";
         }
 
-        protected override void Seed(DAL.Contexto context)
+        protected override void Seed(Entities.Contexto context)
         {
             //  This method will be called after migrating to the latest version.
 

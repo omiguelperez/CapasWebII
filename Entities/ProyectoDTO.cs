@@ -10,7 +10,7 @@ namespace Entities
     {
         public ProyectoDTO()
         {
-            // TODO
+            lista = new List<ProgramacionPagoDTO>();
         }
 
         public int ProyectoId { get; set; }
@@ -20,5 +20,6 @@ namespace Entities
         public int Plazo { get; set; }
         public string Estado { get; set; }
         public int ClienteId { get; set; }
+        public List<ProgramacionPagoDTO> lista;
     }
 }

@@ -12,7 +12,7 @@ namespace AspNetIdentity.Controllers
     [RoutePrefix("api/proyectos")]
     public class ProyectoController : ApiController
     {
-        [Authorize]
+        //[Authorize]
         [Route("")]
         public Respuesta PostProyecto(ProyectoDTO proyectoDTO)
         {

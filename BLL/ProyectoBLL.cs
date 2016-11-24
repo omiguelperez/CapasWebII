@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entities;
-using DAL;
+using Entities;
 
 namespace BLL
 {
@@ -28,7 +28,17 @@ namespace BLL
                     p.Plazo = proyecto.Plazo;
                     p.Estado = proyecto.Estado;
                     p.ClienteId = proyecto.ClienteId;
-
+                    foreach (ProgramacionPagoDTO item in proyecto.lista)
+                    {
+                        ProgramacionPago itemFactura = new ProgramacionPago();
+                        itemFactura.Estado=item.Estado;
+                        itemFactura.Valor = item.Valor;
+                        itemFactura.FechaPago = item.FechaPago;
+                        itemFactura.ProyectoId = item.ProyectoId;
+                        itemFactura.FacturaId = item.FacturaId;
+                        //itemFactura.Factura = f;
+                        p.ProgramacionPagos.Add(itemFactura);
+                    }
                     db.Proyectos.Add(p);
 
                     // preparar la respuesta
