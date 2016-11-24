@@ -65,5 +65,65 @@ namespace BLL
                     ).ToList();
             }
         }
+
+        public async Task<Respuesta> Delete(int clienteId)
+        {
+
+            try
+            {
+                var user = await db.Clientes.FindAsync(clienteId);
+                if (user == null)
+                {
+                    respuesta.Error = true;
+                    respuesta.FilasAfectadas = 0;
+                    respuesta.Mensaje = "El Usuario no exixte";
+                }
+                else
+                {
+                    db.Clientes.Remove(user);
+                    // preparar la respuesta
+                    respuesta.FilasAfectadas = db.SaveChanges();
+                    respuesta.Mensaje = "Se realizó Elimino el usuario satisfactoriamente";
+                    respuesta.Error = false;
+                }
+                return respuesta;
+
+            }
+            catch (System.Data.Entity.Validation.DbEntityValidationException ex)
+            {
+                respuesta.Mensaje = ex.Message;
+                respuesta.FilasAfectadas = 0;
+                respuesta.Error = true;
+            }
+            catch (Exception ex)
+            {
+                respuesta.Mensaje = ex.Message;
+                respuesta.FilasAfectadas = 0;
+                respuesta.Error = true;
+            }
+
+            return respuesta;
+
+        }
+
+        public Respuesta ActualizarCliente(ClienteDTO cliente)
+        {
+            var user = db.Clientes.SingleOrDefault(b => b.ClienteId == cliente.ClienteId);
+            Respuesta respuesta = new Respuesta();
+            if (user != null)
+            {
+                user.Direccion = cliente.Direccion;
+                user.Telefono = cliente.Telefono;
+                cliente.Nombre = cliente.Nombre;
+                respuesta.FilasAfectadas = db.SaveChanges();
+                respuesta.Mensaje = "Información Actualizada";
+                respuesta.Error = false;
+            }
+
+            respuesta.FilasAfectadas = 0;
+            respuesta.Mensaje = "Información No Actualizada";
+            respuesta.Error = true;
+            return respuesta;
+        }
     }
 }

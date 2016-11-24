@@ -25,5 +25,20 @@ namespace AspNetIdentity.Controllers
             ClienteBLL cliente = new ClienteBLL();
             return cliente.GetRecords();
         }
+
+        [Route("delete")]
+        public async System.Threading.Tasks.Task<Respuesta> Delete(int id)
+        {
+            ClienteBLL clienteBLL = new ClienteBLL();
+            return await clienteBLL.Delete(id);
+        }
+
+        [Route("update")]
+        public async System.Threading.Tasks.Task<Respuesta> Put(ClienteDTO cliente)
+        {
+            ClienteBLL clienteBLL = new ClienteBLL();
+            return clienteBLL.ActualizarCliente(cliente);
+        }
+
     }
 }
