@@ -24,27 +24,26 @@ namespace BLL
                     {
                         // preparar al item de factura para guardar
                         Facturas f = new Facturas();
-                        ItemFactura itemFactura;
-
                         f.Fecha = factura.Fecha;
                         f.NumeroFactura = factura.NumeroFactura;
                         f.ClienteId = factura.ClienteId;
 
-                        db.Facturas.Add(f);
-                        var response = db.SaveChanges();
+                        
+                      //  var response = db.SaveChanges();
 
                         foreach (ItemFacturaDTO item in factura.ItemFacturas)
                         {
-                            itemFactura = new ItemFactura();
+                            ItemFactura itemFactura = new ItemFactura();
                             itemFactura.Descripcion = item.Descripcion;
                             itemFactura.Valor = item.Valor;
                             itemFactura.Cantidad = item.Cantidad;
                             itemFactura.Iva = item.Iva;
-                            itemFactura.FacturaId = f.FacturasId;
-                            itemFactura.Factura = f;
-                            db.ItemFacturas.Add(itemFactura);
+                            //itemFactura.FacturaId = f.FacturasId;
+                            //itemFactura.Factura = f;
+                            f.ItemFacturas.Add(itemFactura);
                         }
 
+                        db.Facturas.Add(f);
                         // preparar la respuesta
                         respuesta.FilasAfectadas = db.SaveChanges();
                         respuesta.Mensaje = "Se realizó la operación satisfactoriamente";
