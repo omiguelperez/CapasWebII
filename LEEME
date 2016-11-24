@@ -55,6 +55,23 @@ Guardar una factura con los item incluidos desde el cliente REST
   ]
 }
 
+Para guardar un proyecto:
+
+{ 
+  "ClienteId": 4009, 
+  "Nombre": "anibaljoseguerraz@gmail.com", 
+  "Valor":"23", 
+  "FechaInicio": "2016-11-10", 
+  "Plazo": "2", 
+  "Estado": "Pendiente",
+  "Lista":[{
+    "FechaPago":"2016-11-11",
+    "Valor":"23",
+    "Estado":"LISTO",
+    "FacturaId":"1"
+  }]
+}
+
 Comandos:
 
 enable-migrations
