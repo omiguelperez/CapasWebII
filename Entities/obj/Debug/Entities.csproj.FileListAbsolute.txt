@@ -3,3 +3,8 @@ C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\Entiti
 C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
 C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\Entities\obj\Debug\Entities.dll
 C:\Users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\Entities\obj\Debug\Entities.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\Entities\bin\Debug\Entities.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\Entities\bin\Debug\Entities.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\Entities\obj\Debug\Entities.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\Entities\obj\Debug\Entities.pdb

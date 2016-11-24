@@ -1,0 +1,52 @@
+﻿<br />
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in clientes">
+                    <th scope="row">{{$index + 1}}</th>
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.telefono}}</td>
+                    <td>{{item.direccion}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-6">
+        <form ng-submit="PostClientes()">
+            <div class="form-group">
+                <label>Nombres</label>
+                <input type="text" class="form-control" placeholder="Escriba el Nombre" required ng-model="cliente.Nombre">
+            </div>
+
+            <div class="form-group">
+                <label>Teléfono</label>
+                <input type="number" class="form-control" placeholder="Escriba el Teléfono" required ng-model="cliente.Telefono">
+            </div>
+
+            <div class="form-group">
+                <label>Direccion</label>
+                <input type="text" class="form-control" placeholder="Escriba la Dirección" required ng-model="cliente.Direccion">
+            </div>
+            <button type="button" class="btn btn-warning" ng-click="limpiar()">Limpiar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+
+    </div>
+
+    <div class="alert alert-success" role="alert" style="position:fixed; bottom: 5px; right:5px;" ng-if="mensaje != ''">
+        <button type="button" class="close" ng-click="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Enhorabuena!</strong> {{mensaje}}
+    </div>
+</div>

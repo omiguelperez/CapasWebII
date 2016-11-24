@@ -8,3 +8,13 @@ c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bi
 c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\obj\Debug\DAL.dll
 c:\users\omiguelperez\documents\visual studio 2013\Projects\ProyectoCapas\DAL\obj\Debug\DAL.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\DAL.dll.config
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\DAL.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\DAL.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\obj\Debug\DAL.dll
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\CapasWebII\DAL\obj\Debug\DAL.pdb
